@@ -1,0 +1,22 @@
+{
+  "name": "playwright_mcp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:report": "playwright test --reporter=allure-playwright",
+    "allure:open": "allure open allure-results",
+    "allure:generate": "allure generate allure-results -o allure-report --clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3",
+    "allure-commandline": "^2.46.1",
+    "allure-playwright": "^3.13.0"
+  }
+}
