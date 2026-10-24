@@ -24,5 +24,5 @@ npm run test:smoke
 npm run report:open
 ```
 
-Set `SAUCEDEMO_URL`, `ORANGEHRM_URL`, or `PLAYWRIGHT_URL` to override the default application URLs.
+Set `SAUCEDEMO_URL` to override the default application URL.
 `npm test` runs the full suite and writes an HTML report to `reports/html/`. Open it with `npm run report:open`. Playwright execution artifacts are written to `test-results/`.

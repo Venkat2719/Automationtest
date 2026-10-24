@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 const { LoginPage } = require('../../pages/LoginPage');
 const { InventoryPage } = require('../../pages/InventoryPage');
 const { environment } = require('../../config/env');
-const { users } = require('../../data/users.json');
+const { users } = environment;
 
 test.describe('Core Shopper Operations', () => {
   test('Sign in and handle invalid credentials', async ({ page }) => {

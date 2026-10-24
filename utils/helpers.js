@@ -1,4 +1,5 @@
-const { users } = require('../data/users.json');
+const env = require('../config/env.js');
+const users = env.environment.users;
 
 async function loginAsStandardUser(loginPage) {
   await loginPage.goto();
